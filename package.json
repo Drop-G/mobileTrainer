@@ -1,0 +1,24 @@
+{
+  "name": "mobiletrainer",
+  "version": "1.0.0",
+  "description": "MobileTrainer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drop-G/mobileTrainer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drop-G/mobileTrainer/issues"
+  },
+  "homepage": "https://github.com/Drop-G/mobileTrainer#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.13",
+    "morgan": "^1.10.0"
+  }
+}
