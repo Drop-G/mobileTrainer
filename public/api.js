@@ -9,6 +9,9 @@ const API = {
     const json = await res.json();
 
     return json[json.length - 1];
+  },catch(err) {
+    // catches errors both in fetch and response.json
+    alert(err);
   },
   async addExercise(data) {
     const id = location.search.split("=")[1];
@@ -22,6 +25,9 @@ const API = {
     const json = await res.json();
 
     return json;
+  },catch(err) {
+    // catches errors both in fetch and response.json
+    alert(err);
   },
   async createWorkout(data = {}) {
     const res = await fetch("/api/workouts", {
@@ -33,6 +39,9 @@ const API = {
     const json = await res.json();
 
     return json;
+  },catch(err) {
+    // catches errors both in fetch and response.json
+    alert(err);
   },
 
   async getWorkoutsInRange() {
@@ -40,5 +49,8 @@ const API = {
     const json = await res.json();
 
     return json;
-  },
+  }, catch(err) {
+    // catches errors both in fetch and response.json
+    alert(err);
+  }
 };
