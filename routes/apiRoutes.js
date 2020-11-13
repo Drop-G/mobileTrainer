@@ -11,7 +11,6 @@ module.exports = function(app){
         })
     });
 
-
     app.post("/api/workouts",function (req,res){    
         Workout.create({})
         .then(data => res.json(data))
@@ -25,15 +24,6 @@ module.exports = function(app){
         .then(data =>{  
             res.json(data)
         })
-        .catch(err => { 
-            res.json(err)
-        })
-    });
-
-
-    app.post("/api/workouts/range",function (req,res){    
-        Workout.create({})
-        .then(data => res.json(data))
         .catch(err => { 
             res.json(err)
         })
